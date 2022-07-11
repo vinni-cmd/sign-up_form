@@ -1,7 +1,53 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: rgb(173, 137, 137);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#bgcontainer {
+  width: 100vw;
+  height: 100vh;
+  background-size: 150% auto;
+  background-image: url(./assets/yulia-khlebnikova-iuwMdNq0-s4-unsplash.jpg);
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#bgcontainer > p {
+  font-size: 0.7rem;
+  color: white;
+}
+
+#bgcontainer > p > a {
+  font-size: 0.7rem;
+  color: white;
+}
+
+#main {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 75%;
+  padding: 10px;
+}
+
+#main form {
+  background-color: white;
 }
