@@ -1,16 +1,14 @@
 * {
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: rgb(173, 137, 137);
   font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+  background-color:rgb(230, 230, 230);
+}
+
 #bgcontainer {
-  width: 100vw;
-  height: 100vh;
   background-size: 150% auto;
   background-image: url(./assets/yulia-khlebnikova-iuwMdNq0-s4-unsplash.jpg);
   background-repeat: no-repeat;
@@ -19,6 +17,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+#bgcontainer > section {
+  max-width: 400px;
 }
 
 #logo {
@@ -30,12 +32,12 @@ body {
 }
 
 #bgcontainer > p {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   color: white;
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 #bgcontainer > p > a {
-  font-size: 0.7rem;
   color: white;
 }
 
@@ -44,10 +46,79 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 75%;
+  margin-bottom: 1rem;
+}
+
+#main > section {
   padding: 10px;
 }
 
-#main form {
+#signUp {
   background-color: white;
+}
+
+form section {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  font-size: 0.7rem;
+  margin-top: 5px;
+}
+
+form input {
+width: 80%;
+margin-top: 3px;
+/* margin-bottom: 10px */
+}
+
+input:focus {
+  outline: 2px rgba(241, 95, 205, 0.5) solid;
+}
+
+input:invalid:not(:placeholder-shown):not(:focus) {
+  outline: 3px red solid;
+}
+
+input + div {
+  color: red;
+  font-size: 0.7rem;
+}
+
+button {
+  background-color: rgb(241, 95, 205);
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 5px 15px;
+  margin: 15px 0px;
+}
+
+button + div {
+  font-size: 0.7rem;
+}
+
+div > a {
+  color: rgb(241, 95, 205);;
+}
+
+@media (min-width: 800px) {
+  #bgcontainer {
+    flex-direction: row;
+    padding: 0;
+    background-image: none;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 100%
+  }
+  #logo {
+    height: 100%;
+    background-size: 150% auto;
+    background-image: url(./assets/yulia-khlebnikova-iuwMdNq0-s4-unsplash.jpg);
+    background-repeat: no-repeat;
+  }
+  form>section {
+    display: flex;
+  }
 }

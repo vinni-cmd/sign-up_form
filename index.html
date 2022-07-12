@@ -21,15 +21,50 @@
     </section>
     <section id="main">
       <section>
-        <p>Rapid Snacks is the answer to all of your cravings. Late nights or mid morning, we're here for you. Sign up
+        <p>Rapid Snacks is the answer to all your cravings. Late nights or mid morning, we're here for you. Sign up
           now and you'll receive your first three snacks at no cost.</p>
       </section>
-      <form action="" method="post" id="Sign-up">
+      <section id="signUp">
         <h2>Sign up here!</h2>
-      </form>
-      <section>Sign-up
+        <form action="" id="Sign-up">
+          <section id="name">
+            <div>
+              <label for="name">FIRST NAME</label>
+              <input type="text" name="client_name" id="name" required placeholder=" ">
+            </div>
+            <div>
+              <label for="lastName">LAST NAME</label>
+              <input type="text" name="client_lastName" id="lastName" required placeholder=" ">
+            </div>
+          </section>
+          <section id="contact">
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email" name="client_email" id="email" required placeholder=" ">
+            </div>
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="client_phone" id="phone" minlength="8" inputmode="numeric" placeholder=" ">
+            </div>
+          </section>
+          <section id="password">
+            <div>
+              <label for="psw">PASSWORD</label>
+              <input type="password" name="client_password" id="psw" required pattern="(?=.*\d)(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase letter, and at least 8 or more characters"
+                placeholder=" ">
+              <div id="psw_match">Passwords should match</div>
+            </div>
+            <div>
+              <label for="pswC">CONFIRM PASSWORD</label>
+              <input type="password" name="client_passwordC" id="pswC" required placeholder=" ">
+            </div>
+          </section>
+        </form>
+      </section>
+      <section>
         <button form="Sign-up" type="submit">Create Account</button>
-        <div>Sign-In</div>
+        <div>Already have an account? <a href="">Log-In</a></div>
       </section>
     </section>
     <p>Photo by <a
@@ -39,6 +74,5 @@
     </p>
   </div>
 </body>
-<!-- below is html for background -->
 
 </html>
