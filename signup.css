@@ -49,7 +49,88 @@ table {
 
 /* reset above */
 
-#logo-background {
+/* declare variable "rapid-color" for specific pink color to be used throughout */
+/* declare variable "error-color" */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  display: flex;
+	height: 100vh;
+	font-family: "Ubuntu" , sans-serif;
+	background-color: rgb(202, 189, 189);
+}
+
+body > section {
+	height: 100%;
+}
+
+#sidebar-section {
+	flex-grow: 1;
   background-image: url(./assets/yulia-khlebnikova-iuwMdNq0-s4-unsplash.jpg);
   background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top right;
+	padding: 100px 0 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-width: fit-content;
 }
+
+#logo {
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 100%;
+	padding-right: 10px;
+}
+
+#logo img {
+	margin-right: -15px;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+#sidebar-section p {
+	color: rgb(54, 54, 54);
+	font-size: 0.8rem;
+}
+#sidebar-section p a {
+	color: rgb(54, 54, 54);
+}
+
+#signup-section{
+	max-width: 800px; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ }
+
+ #signup-section > div {
+	padding: 20px 30px;
+ }
+
+ #signup-section > div:nth-child(2) {
+	background-color: white;
+ }
+
+ form section {
+	display: flex;
+	gap: 30px;
+	margin-top: 30px;
+ }
+
+ label {
+	display: block;
+ }
