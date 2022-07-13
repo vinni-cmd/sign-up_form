@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px black dashed;
+  /* border: 1px black dashed; */
 }
 
 :root {
@@ -20,7 +20,7 @@ body, .container {
 
 .container {
   display: flex;
-  background-color: var(--rapidcolor);
+  background-color: var(--rapidcolorlight);
   min-width: fit-content;
 }
 
@@ -67,9 +67,27 @@ body, .container {
   padding: 15px 30px;
 }
 
-/* jumping ahead to some form stuff */
+#form {
+  background-color: white;
+}
+
+.form-group {
+  display: flex;
+  gap: 5px 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+}
 
 input, button {
   font-family: inherit;
   background-color: var(--rapidcolorlight);
+}
+
+button {
+  background-color: var(--rapidcolor);
 }
