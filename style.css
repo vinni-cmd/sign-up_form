@@ -1,124 +1,128 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  /* border: 1px black dashed; */
+}
+
+:root {
+	--rapidcolor: rgb(219 124 213);
+  --rapidcolorlight: rgb(207, 180, 205);
 }
 
 body {
-  background-color:rgb(230, 230, 230);
+  font-family: "Ubuntu" , sans-serif;
 }
 
-#bgcontainer {
-  background-size: 150% auto;
+body, .container {
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  background-color: var(--rapidcolorlight);
+  min-width: fit-content;
+  flex-wrap: wrap
+}
+
+#sidebar {
   background-image: url(./assets/yulia-khlebnikova-iuwMdNq0-s4-unsplash.jpg);
-  background-repeat: no-repeat;
-  padding: 15px;
+	background-size: cover;
+	background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 100px;
+  flex: 1 1 25%;
 }
 
-#bgcontainer > section {
-  max-width: 400px;
+#sidebar > * {
+  min-width: max-content
 }
 
 #logo {
-  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
 }
 
-#bgcontainer > p {
-  font-size: 0.5rem;
-  color: white;
-  background-color: rgba(128, 128, 128, 0.5);
+h1 {
+  font-size: 2rem;
+  padding-right: 0.2em;
 }
 
-#bgcontainer > p > a {
-  color: white;
+#sidebar > p {
+  font-size: 0.7rem;
+  text-align: center;
 }
 
-#main {
-  background-color: rgb(230, 230, 230);
+#sidebar > p > a {
+  color: inherit;
+}
+
+#signup {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-bottom: 1rem;
+  justify-content: center;
+  flex: 3 1 30%;
 }
 
-#main > section {
-  padding: 10px;
+.signup-child {
+  padding: 15px 30px;
 }
 
-#signUp {
+
+#form {
   background-color: white;
 }
 
-form section {
-  margin-top: 20px;
+.form-group {
+  display: flex;
+  gap: 5px 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
 
-form label {
+label {
   display: block;
-  font-size: 0.7rem;
-  margin-top: 5px;
+  font-size: 0.8rem;
 }
 
-form input {
-width: 80%;
-margin-top: 3px;
-/* margin-bottom: 10px */
+input, button {
+  font-family: inherit;
+  background-color: var(--rapidcolorlight);
+}
+
+input {
+  padding: 0.1rem;
+  outline: none;
+  border: 0.1em solid #f8f8f8;
 }
 
 input:focus {
-  outline: 2px rgba(241, 95, 205, 0.5) solid;
+  border: 0.1em solid var(--rapidcolor);
+  box-shadow: 0px 0px 2px 1px var(--rapidcolor);
 }
 
-input:invalid:not(:placeholder-shown):not(:focus) {
-  outline: 3px red solid;
+input:invalid:not(:focus):not(:placeholder-shown) {
+  border: 0.1em solid var(--rapidcolor);
+  box-shadow: 0px 0px 2px 1px red;
 }
 
-input + div {
-  color: red;
-  font-size: 0.7rem;
-}
+#psw_error {
+	color: red;
+	font-size: 0.8rem;
+ }
 
 button {
-  background-color: rgb(241, 95, 205);
-  border-radius: 5px;
-  border: 1px solid grey;
-  padding: 5px 15px;
-  margin: 15px 0px;
+  background-color: var(--rapidcolor);
+  margin: 15px 0;
+  padding: 0.25em 1em;
+  border: 0.1em solid black;
 }
 
-button + div {
-  font-size: 0.7rem;
-}
-
-div > a {
-  color: rgb(241, 95, 205);;
-}
-
-@media (min-width: 800px) {
-  #bgcontainer {
-    flex-direction: row;
-    padding: 0;
-    background-image: none;
-    height: 100vh;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 100%
-  }
-  #logo {
-    height: 100%;
-    background-size: 150% auto;
-    background-image: url(./assets/yulia-khlebnikova-iuwMdNq0-s4-unsplash.jpg);
-    background-repeat: no-repeat;
-  }
-  form>section {
-    display: flex;
-  }
+#signup a {
+  color: var(--rapidcolor);
+  text-decoration: none;
 }
