@@ -7,6 +7,7 @@
 
 :root {
 	--rapidcolor: rgb(219 124 213);
+  --rapidcolorlight: rgb(207, 180, 205);
 }
 
 body {
@@ -56,8 +57,19 @@ body, .container {
   color: inherit;
 }
 
+#signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-child {
+  padding: 15px 30px;
+}
+
 /* jumping ahead to some form stuff */
 
 input, button {
   font-family: inherit;
+  background-color: var(--rapidcolorlight);
 }
