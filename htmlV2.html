@@ -35,15 +35,15 @@
       </div>
       <div id="form" class="signup-child">
         <h2>Sign up here!</h2>
-        <form action="" id="Sign-up">
+        <form action="/" id="Sign-up">
           <section id="fName" class="form-group">
             <div>
               <label for="name">FIRST NAME</label>
-              <input type="text" name="client_name" id="name" required placeholder=" ">
+              <input type="text" name="client_name" id="name" required placeholder=" " minlength="1">
             </div>
             <div>
               <label for="lastName">LAST NAME</label>
-              <input type="text" name="client_lastName" id="lastName" required placeholder=" ">
+              <input type="text" name="client_lastName" id="lastName" required placeholder=" " minlength="1">
             </div>
           </section>
           <section id="fContact" class="form-group">
@@ -72,7 +72,7 @@
         </form>
       </div>
       <div class="signup-child">
-        <button form="Sign-up" type="submit">Create Account</button>
+        <button form="Sign-up" type="submit" id="create">Create Account</button>
         <p>Already have an account? <a href="">Log-In</a></p>
       </div>
     </section>

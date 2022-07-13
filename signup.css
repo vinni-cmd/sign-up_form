@@ -147,6 +147,11 @@ h2 {
 	border: none;
  }
 
+ #psw_error {
+	color: red;
+	font-size: 0.8rem;
+ }
+
  button {
 	background-color: var(--rapidcolor);
 	padding: 5px 15px;
