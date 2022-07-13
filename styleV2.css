@@ -25,6 +25,7 @@ body, .container {
 }
 
 .container > * {
+  flex-grow: 1;
 }
 
 #sidebar {
@@ -66,6 +67,11 @@ body, .container {
 .signup-child {
   padding: 15px 30px;
 }
+
+.signup-child p {
+  max-width: 410px;
+}
+
 
 #form {
   background-color: white;
