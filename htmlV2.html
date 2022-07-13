@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rapid Snacks Sign-up</title>
+  <link rel="stylesheet" href="styleV2.css">
+  <script src="main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <section id="sidebar" class="primary">
+      <div id="logo">
+        <img src="./assets/takeout_dining_black_24dp.svg" alt="takeout box">
+        <h1>Rapid Snacks</h1>
+      </div>
+      <p>Photo by <a
+          href="https://unsplash.com/@khlebnikovayulia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yulia
+          Khlebnikova</a> on <a
+          href="https://unsplash.com/s/photos/snack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
+    </section>
+    <section id="signup" class="primary">
+      <div class="signup-child">
+        <p>
+          Rapid Snacks is the answer to all your cravings. Late nights or mid morning, we're here for you. Sign up
+          now and you'll receive your first three snacks at no cost.
+        </p>
+      </div>
+      <div id="form" class="signup-child">
+        <h2>Sign up here!</h2>
+        <form action="" id="Sign-up">
+          <section id="fName" class="form-group">
+            <div>
+              <label for="name">FIRST NAME</label>
+              <input type="text" name="client_name" id="name" required placeholder=" ">
+            </div>
+            <div>
+              <label for="lastName">LAST NAME</label>
+              <input type="text" name="client_lastName" id="lastName" required placeholder=" ">
+            </div>
+          </section>
+          <section id="fContact" class="form-group">
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email" name="client_email" id="email" required placeholder=" ">
+            </div>
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="client_phone" id="phone" minlength="8" inputmode="numeric" placeholder=" ">
+            </div>
+          </section>
+          <section id="fPassword" class="form-group">
+            <div>
+              <label for="psw">PASSWORD</label>
+              <input type="password" name="client_password" id="psw" required pattern="(?=.*\d)(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase letter, and at least 8 or more characters"
+                placeholder=" " class="error">
+              <div id="psw_error"></div>
+            </div>
+            <div>
+              <label for="pswC">CONFIRM PASSWORD</label>
+              <input type="password" name="client_passwordC" id="pswC" required placeholder=" " class="error">
+            </div>
+          </section>
+        </form>
+      </div>
+      <div class="signup-child">
+        <button form="Sign-up" type="submit">Create Account</button>
+        <p>Already have an account? <a href="">Log-In</a></p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

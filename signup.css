@@ -52,8 +52,13 @@ table {
 /* declare variable "rapid-color" for specific pink color to be used throughout */
 /* declare variable "error-color" */
 
+:root {
+	--rapidcolor: rgb(219 124 213);
+}
+
 * {
 	box-sizing: border-box;
+	font-family: "Ubuntu" , sans-serif;
 }
 
 body {
@@ -111,7 +116,7 @@ h2 {
 }
 
 #signup-section{
-	max-width: 800px; 
+	max-width: 700px; 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -127,10 +132,26 @@ h2 {
 
  form section {
 	display: flex;
-	gap: 30px;
-	margin-top: 30px;
+	gap: 15px 30px;
+	margin-top: 35px;
  }
 
  label {
 	display: block;
+	font-size: 0.8rem;
+ }
+
+ input {
+	padding: 3px;
+	background-color: var(--rapidcolor);
+	border: none;
+ }
+
+ button {
+	background-color: var(--rapidcolor);
+	padding: 5px 15px;
+	border-radius: 3px;
+	border-style: solid;
+	margin-bottom: 10px;
+	font
  }
