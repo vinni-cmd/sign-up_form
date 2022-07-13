@@ -9,26 +9,6 @@
 	--rapidcolor: rgb(219 124 213);
 }
 
-html {
-  height: 100%;
-}
-
-html, body {
-  display: flex;
-  flex-direction: column;
-}
-
 body, .container {
-  border: 4px rgb(207, 29, 29) solid;
-  flex: 1;
-}
-
-.container {
-  display: flex;
-  border: 2px orange solid;
-  background-color: var(--rapidcolor);
-}
-
-.container > * {
-
+  min-height: 100vh;
 }
