@@ -12,3 +12,31 @@
 body, .container {
   min-height: 100vh;
 }
+
+.container {
+  display: flex;
+  background-color: var(--rapidcolor);
+  min-width: fit-content;
+}
+
+.container > * {
+}
+
+#sidebar {
+  background-image: url(./assets/yulia-khlebnikova-iuwMdNq0-s4-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+#sidebar > * {
+  min-width: max-content
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
