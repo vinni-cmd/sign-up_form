@@ -13,18 +13,20 @@ html {
   height: 100%;
 }
 
-body {
-  min-height: 100%;
-  border: 4px rgb(207, 29, 29) solid;
+html, body {
   display: flex;
   flex-direction: column;
+}
+
+body, .container {
+  border: 4px rgb(207, 29, 29) solid;
+  flex: 1;
 }
 
 .container {
   display: flex;
   border: 2px orange solid;
   background-color: var(--rapidcolor);
-  flex: 1;
 }
 
 .container > * {
