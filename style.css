@@ -8,6 +8,7 @@
 :root {
 	--rapidcolor: rgb(219 124 213);
   --rapidcolorlight: rgb(207, 180, 205);
+  font-size: 30px;
 }
 
 body {
@@ -91,6 +92,7 @@ label {
 
 input, button {
   font-family: inherit;
+  font-size: inherit;
   background-color: var(--rapidcolorlight);
 }
 
