@@ -8,6 +8,9 @@
 :root {
 	--rapidcolor: rgb(219 124 213);
   --rapidcolorlight: rgb(207, 180, 205);
+}
+
+html {
   font-size: 30px;
 }
 
